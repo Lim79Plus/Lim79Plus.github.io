@@ -1,5 +1,5 @@
 baseURL = "https://lim79plus.github.io/"
 languageCode = "ja-jp"
 title = "Masa's Portfolio site"
-theme = "ho-theme-sam"
+theme = "hugo-classic"
 canonifyurls = true
