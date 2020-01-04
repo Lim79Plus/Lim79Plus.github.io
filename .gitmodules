@@ -1,9 +1,0 @@
-[submodule "themes/liva-hugo"]
-	path = themes/liva-hugo
-	url = https://github.com/themefisher/liva-hugo.git
-[submodule "themes/ho-theme-sam"]
-	path = themes/ho-theme-sam
-	url = git@github.com:victoriadrake/hugo-theme-sam.git
-[submodule "themes/hugo-classic"]
-	path = themes/hugo-classic
-	url = git@github.com:goodroot/hugo-classic.git
