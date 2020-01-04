@@ -1,4 +1,5 @@
 baseURL = "https://lim79plus.github.io/"
-languageCode = "ja"
+languageCode = "ja-jp"
 title = "Masa's Portfolio site"
 theme = "ho-theme-sam"
+canonifyurls = true
