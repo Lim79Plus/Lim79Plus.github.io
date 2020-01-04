@@ -18,9 +18,11 @@ jobs:
         hugo-version: '0.61.0'
 
     - name: Build
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACTIONS_DEPLOY_KEY }}
       run: |
         git submodule update --init
-        hugi
+        hugo
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2
