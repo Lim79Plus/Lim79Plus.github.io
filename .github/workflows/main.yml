@@ -9,11 +9,11 @@ jobs:
   build-deploy:
     runs-on: ubuntu-18.04
     steps:
-    - uses: actions/checkout@v2
-    - name: Checkout submodules
-      shell: bash
-      run: |
-        git submodule update --init --recursive
+    - name: Checkout with submodule
+    - uses: actions/checkout@v1
+      with:
+        submodules: true
+    
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
