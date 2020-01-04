@@ -10,10 +10,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - name: checkout
-      uses: actions/checkout@v1
-      with:
-        submodules: true
-    
+      uses: actions/checkout@v1    
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
@@ -21,7 +18,9 @@ jobs:
         hugo-version: '0.61.0'
 
     - name: Build
-      run: hugo
+      run: |
+        git submodule update --init
+        hugi
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2
