@@ -10,7 +10,10 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - name: checkout
-      uses: actions/checkout@v1    
+      uses: actions/checkout@v1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        submodule: true
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
@@ -18,9 +21,7 @@ jobs:
         hugo-version: '0.61.0'
 
     - name: Build
-      token: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        git submodule update --init
         hugo
 
     - name: Deploy
